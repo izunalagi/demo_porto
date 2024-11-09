@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .glow-text {
+            color: #00FFD1;
+            text-shadow: 0px 0px 8px rgba(0, 255, 209, 0.7);
+        }
+
+        .glow-bg {
+            background: radial-gradient(circle at 50% 50%, #0d0d0d, #1f2937);
+        }
+
+        .card-glow {
+            box-shadow: 0 4px 20px rgba(0, 255, 209, 0.3);
+        }
+
+        .glow-border {
+            border: 2px solid rgba(0, 255, 209, 0.5);
+            transition: border 0.3s ease-in-out;
+        }
+
+        .glow-border:hover {
+            border: 2px solid rgba(0, 255, 209, 0.8);
+        }
+    </style>
+</head>
+
+<body class="glow-bg min-h-screen text-white font-sans">
+    <!-- Header Section -->
+    <header class="text-center py-10">
+        <h1 class="text-4xl glow-text font-bold mb-4">Welcome to My Portfolio</h1>
+        <p class="text-lg glow-text">I'm a creative web developer with a passion for glowing designs.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold glow-text mb-6">About Me</h2>
+
+            <!-- Profile Photo and Name -->
+            <div class="flex flex-col items-center mb-6">
+                <div class="rounded-full p-1 glow-border overflow-hidden">
+                    <img src="gojo.jfif" alt="Profile Photo" class="rounded-full w-32 h-32 object-cover">
+                </div>
+                <h3 class="text-2xl font-bold glow-text mt-4">Gojo Satoru</h3>
+            </div>
+
+            <p class="text-gray-300 max-w-2xl mx-auto">
+                I specialize in building websites that don't just function, but shine. I focus on delivering unique,
+                visually engaging experiences.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold glow-text mb-6">Skills</h2>
+            <div class="flex flex-wrap justify-center space-x-4">
+                <span class="glow-border rounded-full px-4 py-2">HTML & CSS</span>
+                <span class="glow-border rounded-full px-4 py-2">JavaScript</span>
+                <span class="glow-border rounded-full px-4 py-2">Tailwind CSS</span>
+                <span class="glow-border rounded-full px-4 py-2">UI/UX Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold glow-text mb-6">Projects</h2>
+            <div class="flex flex-wrap justify-center space-x-4">
+                <!-- Project Card -->
+                <div class="card-glow p-6 m-4 rounded-lg max-w-sm bg-gray-800">
+                    <h3 class="text-xl font-semibold glow-text mb-2">Project 1</h3>
+                    <p class="text-gray-300">An innovative web app designed to bring glow effects to the next level.</p>
+                </div>
+                <div class="card-glow p-6 m-4 rounded-lg max-w-sm bg-gray-800">
+                    <h3 class="text-xl font-semibold glow-text mb-2">Project 2</h3>
+                    <p class="text-gray-300">A stunning, responsive website built with Tailwind CSS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold glow-text mb-6">Get in Touch</h2>
+            <p class="text-gray-300">Feel free to reach out for collaborations or just a friendly chat.</p>
+            <a href="mailto:your-email@example.com" class="inline-block mt-4 px-8 py-2 rounded-full glow-border">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-500">
+        <p>&copy; 2024 Izuna. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
